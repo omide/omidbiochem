@@ -1,69 +1,58 @@
-@@ -0,0 +1,73 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وبلاگ علمی</title>
+    <title>امید جودی - وب‌سایت شخصی</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             direction: rtl;
-            text-align: right;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 15px;
             text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
         }
         .container {
-            width: 80%;
+            max-width: 800px;
             margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        .article {
             background: white;
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        .article h2 {
-            margin: 0;
-            color: #333;
-        }
-        .article p {
-            color: #666;
-        }
-        .read-more {
-            display: inline-block;
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             margin-top: 10px;
-            padding: 5px 10px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
         }
-        .read-more:hover {
-            background: #0056b3;
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+        .toggle-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .social-links a {
+            margin: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>وبلاگ علمی من</h1>
-    </header>
     <div class="container">
-        <div class="article">
-            <div class="container">
-    <div style="text-align: center; margin-top: 20px;">
-        <img src="profile.jpg" alt="Omid Joodi" style="width: 150px; height: 150px; border-radius: 50%;">
-        <h2>امید جودی</h2>
+        <h1>امید جودی</h1>
+        <img src="profile.jpg" alt="Omid Joodi">
         <p>🎓 <strong>تحصیلات:</strong></p>
         <ul style="list-style: none; padding: 0;">
             <li>📌 کارشناسی زیست‌شناسی - دانشگاه شهید بهشتی تهران</li>
@@ -72,17 +61,20 @@
         </ul>
         <p>🔬 <strong>زمینه‌های تحقیقاتی:</strong> تشخیص مولکولی، متابولومیکس، تحلیل‌های هوش مصنوعی در پزشکی</p>
         <p>📍 <strong>محل زندگی:</strong> ایران</p>
-    </div>
-</div>
-            <h2>عنوان مقاله اول</h2>
-            <p>این یک خلاصه کوتاه از مقاله است...</p>
-            <a href="article1.html" class="read-more">ادامه مطلب</a>
-        </div>
-        <div class="article">
-            <h2>عنوان مقاله دوم</h2>
-            <p>این یک خلاصه کوتاه از مقاله دیگر است...</p>
-            <a href="article2.html" class="read-more">ادامه مطلب</a>
+        
+        <button class="toggle-btn" onclick="toggleDarkMode()">تغییر تم</button>
+        
+        <h2>ارتباط با من</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/omidjoodi" target="_blank">🔗 LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=omid" target="_blank">📚 Google Scholar</a>
         </div>
     </div>
+    
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
