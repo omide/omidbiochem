@@ -1,4 +1,4 @@
 body {
-    background: url('https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/background.jpg') no-repeat center center fixed;
+    background: url('https://raw.githubusercontent.com/Omidbiochem/Omidbiochem/main/background.jpg') no-repeat center center fixed;
     background-size: cover;
 }
